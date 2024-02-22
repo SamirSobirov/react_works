@@ -36,6 +36,7 @@ export default function App() {
               title={ways[2].title}
               description={ways[2].description}
             />
+            
           </ul>
         </section>
       </main>
