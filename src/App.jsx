@@ -1,9 +1,12 @@
-function App() {
+
+
+export default function App() {
   return (
     <div>
-      <h1>Hello React!!</h1>
+      <Header />
+      <main>
+        <h1>Hello React!!</h1>
+      </main>
     </div>
-  )
+  );
 }
-
-export default App
