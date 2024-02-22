@@ -22,6 +22,7 @@ export default function App() {
           <h3>Наш подхот к обучению</h3>
 
           <ul>
+            
             <WayToTeach
               title={ways[0].title}
               description={ways[0].description}
@@ -36,7 +37,7 @@ export default function App() {
               title={ways[2].title}
               description={ways[2].description}
             />
-            
+
           </ul>
         </section>
       </main>
