@@ -1,4 +1,4 @@
-
+import Header from "./companents/Header";
 
 export default function App() {
   return (

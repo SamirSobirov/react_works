@@ -1,9 +1,13 @@
+import logo from '/vite.svg'
+
 export default function Header() {
+    const now = new Date()
+
     return (
       <header>
-        <h3>Result University</h3>
+        {/* <h3>Result University</h3> */}
   
-        <span>Тут будет время</span>
+        <span>время сейчас: {now.toLocaleTimeString()}</span>
       </header>
     );
   }
