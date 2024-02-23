@@ -1,7 +1,7 @@
 import Header from "./companents/Header";
 import { ways } from "./data";
 import WayToTeach from "./companents/WayToTeach";
-import Button from "./companents/Button";
+import Button from "./companents/Button/Button";
 
 export default function App() {
   return (
@@ -25,7 +25,8 @@ export default function App() {
         <section>
           <h3>Чем мы отличаемся от других</h3>
 
-          <Button />
+          <Button text='button 1'/>
+          <Button text='button 2'/>
         </section>
       </main>
     </div>
