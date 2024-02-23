@@ -2,20 +2,16 @@ import Header from "./companents/Header";
 import { ways, differences } from "./data";
 import WayToTeach from "./companents/WayToTeach";
 import Button from "./companents/Button/Button";
-import { useState } from "react"
-
+import { useState } from "react";
 
 export default function App() {
-  const [ content, setContent ] = useState('Нажми на кнопку')
+  const [content, setContent] = useState("Нажми на кнопку");
 
-
-  // let content = 'Нажми на кнопку'
-
-
+  
   function handleClick(type) {
-    // console.log("button clicked", type);
-    setContent(type)
-    // content = type
+    setContent(type);
+    
+  
   }
 
   return (
@@ -39,10 +35,9 @@ export default function App() {
         <section>
           <h3>Чем мы отличаемся от других</h3>
 
-          <Button onClick={() => handleClick('way')}> Подхот </Button>
-          <Button onClick={() => handleClick('easy')}> Доступность </Button>
-          <Button onClick={() => handleClick('program')}> Концентрация </Button>
-
+          <Button onClick={() => handleClick("way")}> Подхот </Button>
+          <Button onClick={() => handleClick("easy")}> Доступность </Button>
+          <Button onClick={() => handleClick("program")}> Концентрация </Button>
 
           <p>{differences[content]}</p>
         </section>
