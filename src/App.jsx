@@ -5,13 +5,10 @@ import Button from "./companents/Button/Button";
 import { useState } from "react";
 
 export default function App() {
-  const [content, setContent] = useState("Нажми на кнопку");
+  const [contentType, setContentType] = useState(null);
 
-  
   function handleClick(type) {
-    setContent(type);
-    
-  
+    setContentType(type);
   }
 
   return (
@@ -39,7 +36,19 @@ export default function App() {
           <Button onClick={() => handleClick("easy")}> Доступность </Button>
           <Button onClick={() => handleClick("program")}> Концентрация </Button>
 
-          <p>{differences[content]}</p>
+          {/* {contentType ? (
+            <p>{differences[contentType]}</p>
+          ) : (
+            <p>Нажми на кнопку</p>
+          )} */}
+
+{/* 
+          { !contentType ?   <p>Нажми на кнопку</p> : null}
+          { contentType ?    <p>{differences[contentType]}</p> : null} */}
+
+          { !contentType &&  <p>Нажми на кнопку</p> }
+          { contentType &&  <p>{differences[contentType]}</p> }
+
         </section>
       </main>
     </div>
