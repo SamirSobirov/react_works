@@ -25,8 +25,10 @@ export default function App() {
         <section>
           <h3>Чем мы отличаемся от других</h3>
 
-          <Button text='button 1'/>
-          <Button text='button 2'/>
+          <Button> Подхот </Button>
+          <Button> Доступность </Button>
+          <Button> Концентрация </Button>
+          
         </section>
       </main>
     </div>
