@@ -4,6 +4,13 @@ import WayToTeach from "./companents/WayToTeach";
 import Button from "./companents/Button/Button";
 
 export default function App() {
+  let content = 'Нажми на кнопку'
+
+
+  function handleClick(type) {
+    console.log("button clicked", type);
+  }
+
   return (
     <div>
       <Header />
@@ -25,10 +32,12 @@ export default function App() {
         <section>
           <h3>Чем мы отличаемся от других</h3>
 
-          <Button> Подхот </Button>
-          <Button> Доступность </Button>
-          <Button> Концентрация </Button>
-          
+          <Button onClick={() => handleClick('way')}> Подхот </Button>
+          <Button onClick={() => handleClick('easy')}> Доступность </Button>
+          <Button onClick={() => handleClick('program')}> Концентрация </Button>
+
+
+          <p>{content}</p>
         </section>
       </main>
     </div>
