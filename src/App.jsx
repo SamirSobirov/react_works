@@ -43,6 +43,7 @@ export default function App() {
           )} */}
 
 {/* 
+
           { !contentType ?   <p>Нажми на кнопку</p> : null}
           { contentType ?    <p>{differences[contentType]}</p> : null} */}
 
