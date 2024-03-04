@@ -11,6 +11,13 @@ export default function App() {
     setContentType(type);
   }
 
+  let tabContent = null 
+
+  if(contentType) {
+    tabContent = <p>{differences[contentType]} </p>
+  } else {
+    tabContent = <p>Нажми на кнопку</p>
+  }
   return (
     <div>
       <Header />
@@ -36,16 +43,16 @@ export default function App() {
           <Button onClick={() => handleClick("easy")}> Доступность </Button>
           <Button onClick={() => handleClick("program")}> Концентрация </Button>
 
-          {/* {contentType ? (
-            <p>{differences[contentType]}</p>
-          ) : (
-            <p>Нажми на кнопку</p>
-          )} */}
+         
 
 
-          { !contentType ?<p>Нажми на кнопку</p> : null}
-          { contentType ?  <p>{differences[contentType]}</p> : null }
+          {/* { !contentType ?<p>Нажми на кнопку</p> : null}
+          { contentType ?  <p>{differences[contentType]}</p> : null } */}
 
+
+
+          
+          { tabContent }
         </section>
       </main>
     </div>
