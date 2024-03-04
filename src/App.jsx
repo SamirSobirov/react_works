@@ -42,10 +42,6 @@ export default function App() {
             <p>Нажми на кнопку</p>
           )} */}
 
-{/* 
-
-          { !contentType ?   <p>Нажми на кнопку</p> : null}
-          { contentType ?    <p>{differences[contentType]}</p> : null} */}
 
           { !contentType ?<p>Нажми на кнопку</p> : null}
           { contentType ?  <p>{differences[contentType]}</p> : null }
